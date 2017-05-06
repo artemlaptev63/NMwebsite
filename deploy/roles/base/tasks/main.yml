@@ -1,17 +1,37 @@
 ---
 
 - name: Ensure bash, git are the latest versions
-  apt: name={{ item }} update_cache={{ update_apt_cache }} state=latest
+  apt: name={{ item }} update_cache={{ update_apt_cache }} state=latest force=yes state=installed
   with_items:
     - bash
     - openssl
     - libssl-dev
     - libssl-doc
-  tags: packages
-
-- name: Install base packages
-  apt: name={{ item }} update_cache={{ update_apt_cache }} force=yes state=installed
-  with_items:
     - git
     - supervisor
   tags: packages
+
+- name: Install ufw
+  become: yes
+  apt:
+    name: ufw
+    state: present
+    update_cache: "{{ update_apt_cache }}"
+  tags: ufw
+
+- name: Configure ufw rules
+  become: yes
+  ufw:
+    rule: "{{ item.rule|default('allow') }}"
+    proto: "{{ item.proto|default(omit) }}"
+    src: "{{ item.src|default(omit) }}"
+    to_port: "{{ item.to_port|default(omit) }}"
+  with_items:
+    - "{{ ufw_rules }}"
+  tags: ufw
+
+- name: Enable ufw
+  become: yes
+  ufw:
+    state: enabled
+  tags: ufw

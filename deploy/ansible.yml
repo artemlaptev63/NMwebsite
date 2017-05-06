@@ -9,8 +9,8 @@
     - vars/base.yml
     - vars/app.yml
   roles:
-    # - base
-    # - supervisor
-    #- geerlingguy.nginx
-    #- geerlingguy.nodejs
+    - geerlingguy.nginx
+    - geerlingguy.nodejs
+    - base
     - app
+    - deploy

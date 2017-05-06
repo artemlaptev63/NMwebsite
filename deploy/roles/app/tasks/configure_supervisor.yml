@@ -1,5 +1,11 @@
 ---
 
+- name: Install Supervisor
+  apt: name=supervisor update_cache={{ update_apt_cache }} state=installed
+
+- name: Ensure supervisor service is started
+  service: name=supervisor state=started enabled=yes
+
 - name: Create the Supervisor config file for {{ app_name }}
   template: src=supervisor.conf.j2
             dest=/etc/supervisor/conf.d/{{ app_name }}.conf

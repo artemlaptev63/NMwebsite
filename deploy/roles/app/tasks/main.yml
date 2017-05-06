@@ -1,8 +1,6 @@
 ---
 
-#- include: git_clone_repo.yml
-
-- include: npm_install.yml
+- include: git_clone_repo.yml
 
 - include: configure_supervisor.yml
 

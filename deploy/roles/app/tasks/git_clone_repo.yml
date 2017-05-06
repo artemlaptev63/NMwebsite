@@ -22,12 +22,3 @@
   become: true
   become_user: "{{ app_user }}"
   tags: git
-
-# NOTE example only. no need since we vendor everything in <go app>/vendor
-# - name: Run go get at {{ app_path }}
-#   command: chdir={{ app_path }} /usr/local/go/bin/go get
-#   environment: "{{ app_environment }}"
-#   become: true
-#   become_user: "{{ app_user }}"
-#   tags:
-#     - app

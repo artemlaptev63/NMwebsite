@@ -10,15 +10,15 @@
 
 # Server Setup
 
-## Buy Domain Name
+1. Buy Domain Name
 
-## Setup App
+2. Setup App
 
-## Create Git Repo
+3. Create Git Repo
 
-## Create Server
+4. Create Server
 
-## Cert SSL Cert and Download Cert Files
+5. Cert SSL Cert and Download Cert Files
 
 Only needed if setting up a new box or new SSL cert. (per this tutorial https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04)
 
@@ -28,7 +28,18 @@ Only needed if setting up a new box or new SSL cert. (per this tutorial https://
   scp -i <your ssh key> -r root@<your IP>:/etc/letsencrypt/live/<your domain> .
   (i.e. scp -i depkey -r root@46.101.227.108:/etc/letsencrypt/live/nickmanning.co .)
 
-## Configure Ansible Playbook
+6. Ensure enough swap for running `npm install`
+
+```
+sudo fallocate -l 1G /swapfile
+ls -lh /swapfile
+sudo chmod 600 /swapfile
+ls -lh /swapfile
+```
+
+(from https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-16-04)
+
+7. Configure Ansible Playbook
 
 1. update `inventories/*`
 2. update `vars/base.yml`

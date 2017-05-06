@@ -1,3 +1,13 @@
 ---
+
 app_name: nickmanning
 update_apt_cache: yes
+ufw_rules:
+  - rule: "allow"
+    proto: "tcp"
+    from_ip: "any"
+    to_port: 22
+  - rule: "allow"
+    proto: "tcp"
+    from_ip: "any"
+    to_port: 443
