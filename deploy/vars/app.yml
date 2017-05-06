@@ -1,0 +1,24 @@
+---
+
+home_path: "/root"
+
+app_name: "nickmanning"
+app_user: "root"
+app_group: "root"
+
+# go_gopath: "{{ home_path }}/go"
+# app_repo_path: "{{ go_gopath }}/src/github.com/seenickcode"
+# app_path: "{{ app_repo_path }}/{{ app_name }}"
+app_path: "{{ home_path }}/{{ app_name }}"
+
+ssh_pub_key_name: "depkey.pub"
+ssh_priv_key_name: "depkey"
+
+nginx_fullchain_key_name: "fullchain.pem"
+nginx_priv_key_name: "privkey.pem"
+
+git_repo: "git@github.com:seenickcode/nickmanning.git"
+git_keyfile: "{{ home_path }}/.ssh/{{ ssh_priv_key_name }}"
+
+# app_environment:
+#   GOPATH: "{{ go_gopath }}"

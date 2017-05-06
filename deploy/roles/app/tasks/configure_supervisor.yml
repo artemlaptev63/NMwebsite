@@ -1,0 +1,11 @@
+---
+
+- name: Create the Supervisor config file for {{ app_name }}
+  template: src=supervisor.conf.j2
+            dest=/etc/supervisor/conf.d/{{ app_name }}.conf
+
+- name: Re-read the Supervisor config files
+  command: supervisorctl reread
+
+- name: Update Supervisor to add the app in the process group
+  command: supervisorctl update

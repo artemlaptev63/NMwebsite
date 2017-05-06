@@ -1,0 +1,27 @@
+upstream web_rack {
+    server 127.0.0.1:3000;
+}
+
+server {
+        listen 80 default_server;
+        listen [::]:80 default_server ipv6only=on;
+        listen 443 default_server ssl;
+        listen [::]:443 default_server ssl;
+
+        server_name {{ hostname }};
+
+        ssl_certificate /etc/nginx/ssl/fullchain.pem;
+        ssl_certificate_key /etc/nginx/ssl/privkey.pem;
+
+        root /usr/share/nginx/html;
+        index index.html index.htm;
+
+        client_max_body_size 500K;
+
+        location / {
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-Proto $scheme;
+                proxy_set_header Host $host;
+                proxy_pass http://web_rack;
+        }
+}

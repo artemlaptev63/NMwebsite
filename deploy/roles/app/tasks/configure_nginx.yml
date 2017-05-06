@@ -1,0 +1,37 @@
+---
+
+- name: Overwrite the Nginx default file for {{ app_name }}
+  template: src=nginx-nginx.conf.j2
+            dest=/etc/nginx/nginx.conf
+
+- name: Overwrite the Nginx sites-available file for {{ app_name }}
+  template: src=nginx-default.conf.j2
+            dest=/etc/nginx/sites-available/default
+
+- name: Create Nginx SSL directory
+  file: path=/etc/nginx/ssl state=directory owner=root
+  become: true
+
+- name: Copy the Nginx SSL cert
+  become: true
+  copy: src="{{ role_path }}/files/{{ nginx_fullchain_key_name }}"
+        dest="/etc/nginx/ssl/{{ nginx_fullchain_key_name }}"
+        mode=0644
+        owner=root
+
+- name: Copy the Nginx SSL cert key
+  become: true
+  copy: src="{{ role_path }}/files/{{ nginx_priv_key_name }}"
+        dest="/etc/nginx/ssl/{{ nginx_priv_key_name }}"
+        mode=0600
+        owner=root
+
+# - name: Overwrite the Nginx .htpasswd file {{ app_name }}
+#   template: src=.htpasswd
+#             dest=/etc/nginx/.htpasswd
+
+- name: Reload Nginx
+  command: service nginx reload
+
+- name: Restart Nginx
+  command: service nginx restart

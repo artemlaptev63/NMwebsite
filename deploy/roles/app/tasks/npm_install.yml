@@ -1,0 +1,7 @@
+---
+
+- name: Install packages based on package.json.
+  npm:
+    path: "{{ app_path }}"
+    production: yes
+  become: true

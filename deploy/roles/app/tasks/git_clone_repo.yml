@@ -1,0 +1,33 @@
+---
+- name: Create the SSH config file
+  template: src=ssh-config.j2
+            dest=~/.ssh/config
+
+- name: Copy the SSH public key file
+  become: true
+  become_user: "{{ app_user }}"
+  copy: src="{{ role_path }}/files/{{ ssh_pub_key_name }}"
+        dest="{{ home_path }}/.ssh/{{ ssh_pub_key_name }}"
+        mode=0644
+
+- name: Copy the SSH private key file
+  become: true
+  become_user: "{{ app_user }}"
+  copy: src="{{ role_path }}/files/{{ ssh_priv_key_name }}"
+        dest="{{ home_path }}/.ssh/{{ ssh_priv_key_name }}"
+        mode=0600
+
+- name: Clone the Git repo
+  git: repo={{ git_repo }} dest={{ app_path }} key_file={{ git_keyfile }} accept_hostkey=true force=true
+  become: true
+  become_user: "{{ app_user }}"
+  tags: git
+
+# NOTE example only. no need since we vendor everything in <go app>/vendor
+# - name: Run go get at {{ app_path }}
+#   command: chdir={{ app_path }} /usr/local/go/bin/go get
+#   environment: "{{ app_environment }}"
+#   become: true
+#   become_user: "{{ app_user }}"
+#   tags:
+#     - app

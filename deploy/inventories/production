@@ -1,0 +1,6 @@
+[appnodes]
+appnode-01 node_env=production ansible_host=46.101.227.108
+
+[appnodes:vars]
+env=production
+hostname=nickmanning.co

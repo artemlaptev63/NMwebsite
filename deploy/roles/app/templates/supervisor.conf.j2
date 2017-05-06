@@ -1,0 +1,12 @@
+[program:{{ app_name }}]
+command=npm --prefix {{ app_path }} start
+autostart=true
+autorestart=true
+startsecs=5
+startretries=10
+user={{ app_user }}
+redirect_stderr=true
+stdout_logfile={{ home_path }}/stdout.log
+stdout_logfile_maxbytes=50MB
+stdout_logfile_backups=10
+environment=NODE_ENV={{ node_env }}
