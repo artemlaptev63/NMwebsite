@@ -1,0 +1,31 @@
+---
+
+- name: Clone the Git repo
+  git: repo={{ git_repo }} dest={{ app_path }} key_file={{ git_keyfile }} accept_hostkey=true force=true
+  become: true
+  become_user: "{{ app_user }}"
+  tags: deploy
+
+- name: Install npm deps
+  npm:
+    path: "{{ app_path }}"
+  tags: deploy
+
+- name: Build the app
+  shell: node {{ app_path }}/node_modules/.bin/nuxt build
+  args:
+    chdir: "{{ app_path }}"
+  tags: deploy
+
+- name: Stop app with Supervisor
+  command: supervisorctl stop {{ app_name }}
+  tags: deploy
+
+# - name: Kill possibly existing server
+#   shell: pkill node
+#   ignore_errors: True
+#   tags: deploy
+
+- name: Start app with Supervisor
+  command: supervisorctl start {{ app_name }}
+  tags: deploy
