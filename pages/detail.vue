@@ -1,9 +1,11 @@
 <template>
   <div>
-    <nuxt/>
+    <h1>Detail</h1>
   </div>
 </template>
 
-<style>
+<script>
+</script>
 
+<style>
 </style>
