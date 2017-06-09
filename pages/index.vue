@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section>
+    <section id="hero">
       <h1>Nick Manning</h1>
       <ul>
         <li>CTO Consultant</li>
@@ -43,7 +43,7 @@
       <h2>Current</h2>
       <h3>CTO / Co-Founder, Drinkeasy</h3>
       <p><em>NYC, Berlin</em></p>
-      <p>A chatbot-fueled eCommerce platform for craft spirits.<br/> 
+      <p>A chatbot-fueled eCommerce platform for craft spirits.<br/>
          Techstars 2017</p>
       <a href="drinkeasy.co">drinkeasy.co</a>
       <img src="../assets/drink-easy-logo.png" alt="drink-easy">
@@ -75,5 +75,10 @@ export default {
 </script>
 
 <style>
-
+section#hero {
+  min-height: 800px;
+  background-image: url("~assets/rectangle-1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 </style>
