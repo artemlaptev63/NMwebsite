@@ -8,7 +8,7 @@
         <li>Berlin based New Yorker</li>
       </ul>
     </section>
-    <section class="section-bg-plain section-spacing-indented">
+    <section id="experience" class="section-bg-plain section-spacing-indented">
       <h2>Experience</h2>
       <ul>
         <li>7 years in CTO &amp; Technical Leadership Roles</li>
@@ -185,4 +185,75 @@ export default {
   #contact {
     padding-bottom: 5%;
   }
+
+
+
+  /*for mobile*/
+  @media screen and (max-width: 400px) {
+    #technologies ul {
+      display: block;
+    }
+    #technologies ul:nth-of-type(2),
+    #technologies ul:nth-of-type(3) {
+      padding-left: 0%;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    #technologies ul:nth-of-type(1) {
+      margin-bottom: 0px;
+    }
+    .section-bg-plain {
+      padding: 15% 0% 17% 20%;
+    }
+    #experience li {
+      margin-top: 30px;
+    }
+    .grid {
+      grid-template-columns: 1fr;
+    }
+    .drink-easy-logo {
+      grid-row: 1 / 2;
+    }
+    .swig-logo {
+      grid-row: 3 / 4; 
+    }
+    .grid .section-bg-plain {
+      padding-left: 20%;
+    }
+    .drink-easy-logo {
+      padding-left: 15%;
+    }
+    .swig-logo {
+      padding-left: 18%;
+    }
+    img {
+      width: 50%;
+      display: block;
+    }
+    #technologies img:nth-of-type(2),
+    #technologies img:nth-of-type(4) {
+      padding-left: 0%;
+    }
+    #technologies img:nth-of-type(1),
+    #technologies img:nth-of-type(2),
+    #technologies img:nth-of-type(3),
+    #technologies img:nth-of-type(4) {
+      padding-top: 30px;
+      padding-bottom: 50px;
+    }
+    #technologies img:nth-of-type(4) {
+      padding-bottom: 80px;
+    }
+    #technologies h2:nth-of-type(1) {
+      margin-top: 60px;
+    }
+    #contact p {
+      font-size: 18px;
+    }
+    body p,
+    body ul {
+      font-size: 18px;
+    }
+  }
+  /*for mobile*/
 </style>
