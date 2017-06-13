@@ -1,6 +1,7 @@
 <template>
   <div>
-    <section id="hero" class="section-bg-colored">
+    <section class="section-bg-colored hero">
+    <router-link to="/detail">dfsd</router-link>
       <h1>Nick Manning</h1>
       <ul>
         <li>CTO Consultant</li>
@@ -62,7 +63,7 @@
         <img src="../assets/swig-logo.png" alt="swig-logo">
       </section>
     </div>
-    <section id="contact" class="section-bg-colored">
+    <section class="section-bg-colored contact">
       <h2>Get in Touch</h2>
       <p>0123456789<br/>
          nicholas.manning@gmail.com</p>
@@ -81,179 +82,55 @@ export default {
 </script>
 
 <style>
-  #hero {
-    background-image: url("~assets/rectangle-1.png");
-  }
-  #technologies {
-    background-image: url("~assets/rectangle-2.png");
-  }
-  #contact {
-    background-image: url("~assets/rectangle-3.png");
-  }
-  #hero, #technologies, #contact {
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
-  h1 {
-    margin-top: 0px;
-    font-size: 35px;
-    font-weight: bold;
-    letter-spacing: 0.5px;
-    color: #ffffff;
-  }
-  .section-bg-colored {
-    padding: 15% 0% 17% 20%;
-  }
-  ul {
-    list-style: none;
-    padding-left: 0px;
-    color: #ffffff;
-    font-size: 20px;
-    line-height: 1.5;
-    letter-spacing: 0.5px;
-    font-weight: 100;
-  }
-  .section-bg-plain {
-    padding: 10% 0% 10% 30%;
-  }
-  h2 {
-    font-size: 35px;
-    font-weight: bold;
-    letter-spacing: 0.5px;
-    color: #000000;
-  }
-  a {
-    text-decoration: none;
-    color: #53a0fe;
-    font-size: 20px;
-  }
-  p {
-    font-size: 20px;
-    line-height: 1.5;
-    letter-spacing: 0.5px;
-  }
-  .section-bg-plain ul {
-    color: #000000;
-  }
-  #technologies h2, #contact h2, #contact {
-    color: #ffffff;
-  }
-  #technologies ul {
-    display: inline-block;
-  }
-  #technologies ul:nth-of-type(2),
-  #technologies ul:nth-of-type(3) {
-    padding-left: 12%;
-  }
-  #technologies h2:nth-of-type(2) {
-    margin-top: 80px;
-  }
-  img {
-    width: 15%;
-  }
-  #technologies img:nth-of-type(2),
-  #technologies img:nth-of-type(4) {
-    padding-left: 13%;
-  }
-  #technologies img:nth-of-type(3),
-  #technologies img:nth-of-type(4) {
-    padding-top: 30px;
-    padding-bottom: 20px;
-  }
-  .grid {
+/*grid*/
+.grid {
     display: grid;
     grid-template-columns: 3fr 1fr;
-  }
-  .swig-logo,
-  .drink-easy-logo {
+}
+.swig-logo,
+.drink-easy-logo {
     align-self: center;
     justify-self: end;
-  }
-  .grid .section-bg-plain {
-    padding-left: 40%;
-  }
-  .grid .section-bg-plain p:nth-of-type(1) {
-    margin-top: 0px;
-  }
-  .grid h3 {
-    margin-bottom: 0px;
-  }
-  .drink-easy-logo img,
-  .swig-logo img {
+}
+.drink-easy-logo img,
+.swig-logo img {
     width: 50%;
-  }
-  #contact {
-    padding-bottom: 5%;
-  }
-
-
-
-  /*for mobile*/
-  @media screen and (max-width: 400px) {
-    #technologies ul {
-      display: block;
-    }
-    #technologies ul:nth-of-type(2),
-    #technologies ul:nth-of-type(3) {
-      padding-left: 0%;
-      margin-top: 0px;
-      margin-bottom: 0px;
-    }
-    #technologies ul:nth-of-type(1) {
-      margin-bottom: 0px;
-    }
-    .section-bg-plain {
-      padding: 15% 0% 17% 20%;
-    }
-    #experience li {
-      margin-top: 30px;
-    }
-    .grid {
-      grid-template-columns: 1fr;
-    }
-    .drink-easy-logo {
-      grid-row: 1 / 2;
-    }
-    .swig-logo {
-      grid-row: 3 / 4; 
-    }
-    .grid .section-bg-plain {
-      padding-left: 20%;
-    }
-    .drink-easy-logo {
-      padding-left: 15%;
-    }
-    .swig-logo {
-      padding-left: 18%;
-    }
-    img {
+}
+.grid .section-bg-plain {
+    padding-left: 40%;
+}
+.grid .section-bg-plain p:nth-of-type(1) {
+    margin-top: 0px;
+}
+.grid h3 {
+    margin-bottom: 0px;
+}
+/*grid*/
+@media screen and (max-width: 400px) {
+  img {
       width: 50%;
       display: block;
-    }
-    #technologies img:nth-of-type(2),
-    #technologies img:nth-of-type(4) {
-      padding-left: 0%;
-    }
-    #technologies img:nth-of-type(1),
-    #technologies img:nth-of-type(2),
-    #technologies img:nth-of-type(3),
-    #technologies img:nth-of-type(4) {
-      padding-top: 30px;
-      padding-bottom: 50px;
-    }
-    #technologies img:nth-of-type(4) {
-      padding-bottom: 80px;
-    }
-    #technologies h2:nth-of-type(1) {
-      margin-top: 60px;
-    }
-    #contact p {
-      font-size: 18px;
-    }
-    body p,
-    body ul {
-      font-size: 18px;
-    }
   }
-  /*for mobile*/
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .grid h2 {
+    margin-top: -30px;
+  }
+  .drink-easy-logo {
+    grid-row: 1 / 2;
+  }
+  .swig-logo {
+    grid-row: 3 / 4; 
+  }
+  .grid .section-bg-plain {
+    padding-left: 20%;
+  }
+  .drink-easy-logo {
+    padding-left: 15%;
+  }
+  .swig-logo {
+    padding-left: 18%;
+  }
+}
 </style>
