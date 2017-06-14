@@ -56,6 +56,7 @@
         }
         .drink-easy-logo img {
             padding-left: 10%;
+            width: 40%;
         }
     }
 </style>

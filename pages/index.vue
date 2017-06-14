@@ -1,7 +1,6 @@
 <template>
   <div>
     <section class="section-bg-colored hero">
-    <router-link to="/detail">dfsd</router-link>
       <h1>Nick Manning</h1>
       <ul>
         <li>CTO Consultant</li>
@@ -50,7 +49,7 @@
         <a href="drinkeasy.co">drinkeasy.co</a>
       </section>
       <section class="drink-easy-logo">
-        <img src="../assets/drink-easy-logo.png" alt="drink-easy">
+        <router-link to="/detail"><img src="../assets/drink-easy-logo.png" alt="drink-easy"></router-link>
       </section>
       <section class="section-bg-plain section-spacing-indented">
         <h2>Recent</h2>
@@ -60,7 +59,7 @@
         <a href="swig.co">swig.co</a>
       </section>
       <section class="swig-logo">
-        <img src="../assets/swig-logo.png" alt="swig-logo">
+        <router-link to="/detail"><img src="../assets/swig-logo.png" alt="swig-logo"></router-link>
       </section>
     </div>
     <section class="section-bg-colored contact">
@@ -126,11 +125,15 @@ export default {
   .grid .section-bg-plain {
     padding-left: 20%;
   }
-  .drink-easy-logo {
-    padding-left: 15%;
+  .drink-easy-logo img {
+    padding-left: 19%;
   }
   .swig-logo {
-    padding-left: 18%;
+    padding-left: 20%;
+  }
+  .drink-easy-logo img,
+  .swig-logo img {
+    width: 40%;
   }
 }
 </style>
