@@ -1,39 +1,31 @@
 <template>
   <div>
     <section class="section-bg-colored hero">
-      <h1>Nick Manning</h1>
+      <h1>Nicholas Manning</h1>
       <ul>
-        <li>CTO Consultant</li>
-        <li>Startup hacker</li>
-        <li>Berlin based New Yorker</li>
+        <li>Technical CTO<li>
+        <li>Software Craftsman</li>
+        <li>Berlin &amp; NYC</li>
       </ul>
     </section>
     <section id="experience" class="section-bg-plain section-spacing-indented">
-      <h2>Experience</h2>
+      <h2>In a Nutshell</h2>
       <ul>
-        <li>7 years in CTO &amp; Technical Leadership Roles</li>
-        <li>13 years of Software Architecture &amp; Development</li>
-        <li>5 years of Mobile and eCommerce Product Strategy Consulting</li>
+        <li>Builder and Manager of Technical Teams</li>
+        <li>7+ year in leadership roles, 15+ years of software engineering experience</li>
+        <li>Specializing in Bot, Mobile and eCommerce Product Strategy</li>
       </ul>
     </section>
     <section id="technologies" class="section-bg-colored">
-      <h2>Technologies</h2>
+      <h2>Skills</h2>
       <ul>
-        <li>Technology 1</li>
-        <li>Technology 2</li>
-        <li>Technology 3</li>
+        <li><b>Management:</b>&nbsp; Product Strategy, Technical Team Management</li>
+        <li><b>Languages:</b>&nbsp; Golang, JavaScript, ES6, Swift, Objective-C, Elixir, Ruby, C#, Java</li>
+        <li><b>Frameworks:</b>&nbsp; Vue, Nuxt, React Native, React, Phoenix, .NET, Ruby on Rails, Node.js</li>
+        <li><b>Infrastructure:</b>&nbsp; AWS, Nginx, Docker, Ansible, Terraform</li>
+        <li><b>Specializations:</b>&nbsp; Bots, Mobile, eCommerce, Conversational Commerce</li>
       </ul>
-      <ul>
-        <li>Technology 4</li>
-        <li>Technology 5</li>
-        <li>Technology 6</li>
-      </ul>
-      <ul>
-        <li>Technology 7</li>
-        <li>Technology 8</li>
-        <li>Technology 9</li>
-      </ul>
-      <h2>Featured Clients</h2>
+      <h2>Clients</h2>
       <img src="../assets/adidas-logo.png" alt="adidas">
       <img src="../assets/benefit-logo.png" alt="benefit"><br/>
       <img src="../assets/taylormade-ogo.png" alt="taylormade">
@@ -46,17 +38,17 @@
         <p><em>NYC, Berlin</em></p>
         <p>A chatbot-fueled eCommerce platform for craft spirits.<br/>
            Techstars 2017</p>
-        <a href="drinkeasy.co">drinkeasy.co</a>
+        <a href="http://www.drinkeasy.co" target="_blank">drinkeasy.co</a>
       </section>
       <section class="drink-easy-logo">
         <router-link to="/detail"><img src="../assets/drink-easy-logo.png" alt="drink-easy"></router-link>
       </section>
       <section class="section-bg-plain section-spacing-indented">
-        <h2>Recent</h2>
+        <h2>Previous</h2>
         <h3>CTO / Co-Founder, Swig</h3>
         <p><em>NYC</em></p>
-        <p>Photosharing for the world's drink explorers.</p>
-        <a href="swig.co">swig.co</a>
+        <p>Photosharing for the world's taste explorers.</p>
+        <a href="http://www.swig.co" target="_blank">swig.co</a>
       </section>
       <section class="swig-logo">
         <router-link to="/detail"><img src="../assets/swig-logo.png" alt="swig-logo"></router-link>
@@ -64,8 +56,9 @@
     </div>
     <section class="section-bg-colored contact">
       <h2>Get in Touch</h2>
-      <p>0123456789<br/>
-         nicholas.manning@gmail.com</p>
+      <p>nicholas.manning at gmail dot com</p>
+      <p><a href="https://www.twitter.com/seenickcode" target="_blank">@seenickcode</a></p>
+      <p><a href="https://www.linkedin.com/in/nicholasmanning" target="_blank">linkedin.com/in/nicholasmanning</a></p>
     </section>
   </div>
 </template>
@@ -124,7 +117,7 @@ export default {
     grid-row: 1 / 2;
   }
   .swig-logo {
-    grid-row: 3 / 4; 
+    grid-row: 3 / 4;
   }
   .grid .section-bg-plain {
     padding-left: 20%;
