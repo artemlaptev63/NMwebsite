@@ -106,12 +106,16 @@ export default {
 }
 /*grid*/
 @media screen and (max-width: 400px) {
+  #experience {
+    padding-right: 30px;
+  }
   img {
       width: 50%;
       display: block;
   }
   .grid {
     grid-template-columns: 1fr;
+    padding-right: 30px;
   }
   .grid h2 {
     margin-top: -30px;

@@ -93,6 +93,9 @@ img {
 }
 /*for mobile*/
 @media screen and (max-width: 400px) {
+    h1, h2 {
+        font-size: 27px;
+    }
     #technologies ul {
       display: block;
     }

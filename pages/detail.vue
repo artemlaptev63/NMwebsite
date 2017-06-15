@@ -34,6 +34,9 @@
 </script>
 
 <style>
+    .hero {
+        padding-right: 30px;
+    }
     .grid {
         display: grid;
         grid-template-columns: 4fr 1fr;
