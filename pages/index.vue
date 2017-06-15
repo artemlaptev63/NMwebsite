@@ -5,7 +5,7 @@
       <ul>
         <li>Technical CTO<li>
         <li>Software Craftsman</li>
-        <li>Berlin &amp; NYC</li>
+        <li>Berlin Based New Yorker</li>
       </ul>
     </section>
     <section id="experience" class="section-bg-plain section-spacing-indented">
