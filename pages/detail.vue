@@ -26,7 +26,7 @@
       <h2>Get in Touch</h2>
       <p>nicholas.manning at gmail dot com</p>
       <p><a href="https://www.twitter.com/seenickcode" target="_blank">@seenickcode</a></p>
-      <p><a href="https://www.linkedin.com/in/nicholasmanning" target="_blank">linkedin.com</a></p>
+      <p><a href="https://www.linkedin.com/in/nicholasmanning" target="_blank">LinkedIn Profile</a></p>
     </section>
   </div>
 </template>

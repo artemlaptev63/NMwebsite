@@ -75,9 +75,13 @@ p {
 #technologies h2, #contact h2, #contact {
     color: #ffffff;
 }
+#technologies img:nth-of-type(1),
+#technologies img:nth-of-type(3) {
+    padding-left: 0%;
+}
 #technologies img:nth-of-type(2),
 #technologies img:nth-of-type(4) {
-    padding-left: 20%;
+    padding-left: 30%;
 }
 #technologies img:nth-of-type(3),
 #technologies img:nth-of-type(4) {
@@ -118,7 +122,7 @@ p {
     #technologies h2:nth-of-type(1) {
       margin-top: 60px;
     }
-    #contact p {
+    #contact p, a {
       font-size: 18px;
     }
     body p,
