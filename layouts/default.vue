@@ -9,16 +9,16 @@ body {
     margin: 0px;
     font-family: "Avenir", sans-serif;
 }
-.hero {
+#hero {
     background-image: url("~assets/rectangle-1.png");
 }
 #technologies {
     background-image: url("~assets/rectangle-2.png");
 }
-.contact {
+#contact {
     background-image: url("~assets/rectangle-3.png");
 }
-.hero, #technologies, .contact {
+#hero, #technologies, #contact {
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -30,7 +30,10 @@ h1 {
     color: #ffffff;
 }
 .section-bg-colored {
-    padding: 15% 0% 17% 20%;
+    padding: 15% 10% 17% 20%;
+}
+.section-bg-plain {
+    padding: 10% 10% 10% 30%;
 }
 ul {
     list-style: none;
@@ -41,8 +44,11 @@ ul {
     letter-spacing: 0.5px;
     font-weight: 100;
 }
-.section-bg-plain {
-    padding: 10% 0% 10% 30%;
+#technologies ul {
+    margin-bottom: 100px;
+}
+#technologies ul li {
+    margin-top: 15px;
 }
 h2 {
     font-size: 35px;
@@ -63,56 +69,37 @@ p {
 .section-bg-plain ul {
     color: #000000;
 }
-#technologies h2, .contact h2, .contact {
+#technologies img {
+    width: 25%;
+}
+#technologies h2, #contact h2, #contact {
     color: #ffffff;
-}
-#technologies ul {
-    display: inline-block;
-}
-#technologies ul:nth-of-type(2),
-#technologies ul:nth-of-type(3) {
-    padding-left: 12%;
-}
-#technologies h2:nth-of-type(2) {
-    margin-top: 80px;
-}
-img {
-    width: 15%;
 }
 #technologies img:nth-of-type(2),
 #technologies img:nth-of-type(4) {
-    padding-left: 13%;
+    padding-left: 20%;
 }
 #technologies img:nth-of-type(3),
 #technologies img:nth-of-type(4) {
-    padding-top: 30px;
+    padding-top: 80px;
     padding-bottom: 20px;
 }
-.contact {
+#contact {
     padding-bottom: 5%;
 }
 /*for mobile*/
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     h1, h2 {
         font-size: 27px;
     }
-    #technologies ul {
-      display: block;
-    }
-    #technologies ul:nth-of-type(2),
-    #technologies ul:nth-of-type(3) {
-      padding-left: 0%;
-      margin-top: 0px;
-      margin-bottom: 0px;
-    }
-    #technologies ul:nth-of-type(1) {
-      margin-bottom: 0px;
-    }
     .section-bg-plain {
-      padding: 15% 0% 17% 20%;
+      padding: 15% 10% 17% 20%;
     }
     #experience li {
       margin-top: 30px;
+    }
+    #technologies img {
+        width: 200px;
     }
     #technologies img:nth-of-type(2),
     #technologies img:nth-of-type(4) {
@@ -126,12 +113,12 @@ img {
       padding-bottom: 50px;
     }
     #technologies img:nth-of-type(4) {
-      padding-bottom: 80px;
+      padding-bottom: 150px;
     }
     #technologies h2:nth-of-type(1) {
       margin-top: 60px;
     }
-    .contact p {
+    #contact p {
       font-size: 18px;
     }
     body p,
