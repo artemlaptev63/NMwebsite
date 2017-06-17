@@ -20,7 +20,7 @@
       <div class="skills">
       <h2>Skills</h2>
         <ul>
-          <li><b>Management:</b>&nbsp; Product Strategy, Technical Team Management</li>
+          <li><b>Non-Technical:</b>&nbsp; Product Strategy, Technical Team Management</li>
           <li><b>Languages:</b>&nbsp; Golang, JavaScript, ES6, Swift, Objective-C, Elixir, Ruby, C#, Java</li>
           <li><b>Frameworks:</b>&nbsp; Vue, Nuxt, React Native, React, Phoenix, .NET, Ruby on Rails, Node.js</li>
           <li><b>Infrastructure:</b>&nbsp; AWS, Nginx, Docker, Ansible, Terraform</li>
