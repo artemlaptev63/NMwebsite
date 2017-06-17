@@ -4,7 +4,7 @@
       <h1>Nicholas Manning</h1>
       <ul>
         <li>CTO<li>
-        <li>Software Craftsman</li>
+        <li>Bot Craftsman</li>
         <li>Berlin Based New Yorker</li>
       </ul>
     </section>
