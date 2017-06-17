@@ -3,7 +3,7 @@
     <section id="hero" class="section-bg-colored">
       <h1>Nicholas Manning</h1>
       <ul>
-        <li>Technical CTO<li>
+        <li>CTO<li>
         <li>Software Craftsman</li>
         <li>Berlin Based New Yorker</li>
       </ul>
@@ -45,7 +45,7 @@
              Techstars 2017</p>
           <a href="http://www.drinkeasy.co" target="_blank">drinkeasy.co</a>
         </div>
-        <div class="job-logo-cell">
+        <div class="logo">
           <router-link to="/detail"><img src="../assets/drink-easy-logo.png" alt="drink-easy"></router-link>
         </div>
       </div>
@@ -57,16 +57,18 @@
           <p>Photosharing for the world's taste explorers.</p>
           <a href="http://www.swig.co" target="_blank">swig.co</a>
         </div>
-        <div class="job-logo-cell">
+        <div class="logo">
           <router-link to="/detail"><img src="../assets/swig-logo.png" alt="swig-logo"></router-link>
         </div>
       </div>
+      <h2>&nbsp;</h2>
+      <p><a href="https://www.linkedin.com/in/nicholasmanning" target="_blank">More previous positions</a></p>
     </section>
     <section id="contact" class="section-bg-colored">
       <h2>Get in Touch</h2>
       <p>nicholas.manning at gmail dot com</p>
       <p><a href="https://www.twitter.com/seenickcode" target="_blank">@seenickcode</a></p>
-      <p><a href="https://www.linkedin.com/in/nicholasmanning" target="_blank">LinkedIn Profile</a></p>
+      <p><a href="https://www.linkedin.com/in/nicholasmanning" target="_blank">LinkedIn</a></p>
     </section>
   </div>
 </template>
@@ -89,17 +91,17 @@ export default {
   grid-gap: 100px;
   margin-bottom: 50px;
 }
-.job-logo-cell {
+.job-item .logo {
   align-self: center;
   justify-self: center;
 }
-.job-logo-cell img {
+.job-item .logo img {
   width: 150px;
 }
-.detail h3 {
+.job-item .detail h3 {
   margin-bottom: 0px;
 }
-.city {
+.job-item .detail .city {
   margin-top: 0px;
 }
 /*grid*/

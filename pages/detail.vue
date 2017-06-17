@@ -18,7 +18,7 @@
             <p>Wie oder wo genau die Mathematik entstand, kann man heute nicht mehr sagen. Fakt ist aber, dass man schon vor circa 5000 Jahren damit angefangen hat. Zuerst waren da die Babylonier. Sie waren die ersten Menschen, die eine Form der Mathematik benutzten, um ihre Anzahl an Vieh zu zählen. Ungefähr 2000 Jahre später entwickelten die Ägypter erste Formeln. Ähnlich wie bei den Babyloniern handelte es sich hier um die Berechnungen um Bauwerke zu errichten. Allerdings handelte es sich hier auch um Pyramiden. Auf Papyrusrollen lösten sie sogar schon richtige mathematische Aufgaben, die sie sich selbst stellten.
             </p>
         </div>
-        <div class="job-logo-cell">
+        <div class="logo">
             <img src="../assets/drink-easy-logo.png" alt="drink-easy">
         </div>
     </section>
@@ -55,7 +55,7 @@
             padding-right: 10%;
             grid-template-columns: 1fr;
         }
-        .job-logo-cell img {
+        .logo img {
             display: none;
         }
     }
