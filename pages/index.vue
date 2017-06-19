@@ -1,12 +1,22 @@
 <template>
   <div>
     <section id="hero" class="section-bg-colored">
+      <div id="social-media">
+        <a href="#hero"><img src="../assets/linkedin-logo.png" alt="linkedin-logo"></a>
+        <a href="#hero"><img src="../assets/twitter-logo.png" alt="twitter-logo"></a>
+        <a href="#hero"><img src="../assets/medium-logo.png" alt="medium-logo"></a>
+      </div>  
       <h1>Nicholas Manning</h1>
       <ul>
         <li>CTO<li>
         <li>Bot Craftsman</li>
         <li>Berlin Based New Yorker</li>
       </ul>
+      <div id="social-media-mobile">
+        <img src="../assets/linkedin-logo.png" alt="linkedin-logo">
+        <img src="../assets/twitter-logo.png" alt="twitter-logo">
+        <img src="../assets/medium-logo.png" alt="medium-logo">
+      </div> 
     </section>
     <section id="experience" class="section-bg-plain">
       <h2>In a Nutshell</h2>
@@ -43,7 +53,9 @@
           <p class="city"><em>NYC, Berlin</em></p>
           <p>A chatbot-fueled eCommerce platform for craft spirits.<br/>
              Techstars 2017</p>
-          <a href="http://www.drinkeasy.co" target="_blank">drinkeasy.co</a>
+           <h3>Recognition:</h3>
+           <p>Techstars 2017</p>
+          <router-link to="/detail">Learn more about Drinkeasy</router-link>
         </div>
         <div class="logo">
           <router-link to="/detail"><img src="../assets/drink-easy-logo.png" alt="drink-easy"></router-link>
@@ -55,20 +67,18 @@
           <h3>CTO / Co-Founder, Swig</h3>
           <p class="city"><em>NYC</em></p>
           <p>Photosharing for the world's taste explorers.</p>
-          <a href="http://www.swig.co" target="_blank">swig.co</a>
+          <router-link to="/detail">Learn more about Swig</router-link>
         </div>
         <div class="logo">
           <router-link to="/detail"><img src="../assets/swig-logo.png" alt="swig-logo"></router-link>
         </div>
       </div>
-      <h2>&nbsp;</h2>
-      <p><a href="https://www.linkedin.com/in/nicholasmanning" target="_blank">More previous positions</a></p>
     </section>
     <section id="contact" class="section-bg-colored">
-      <h2>Get in Touch</h2>
-      <p>nicholas.manning at gmail dot com</p>
-      <p><a href="https://www.twitter.com/seenickcode" target="_blank">@seenickcode</a></p>
-      <p><a href="https://www.linkedin.com/in/nicholasmanning" target="_blank">LinkedIn</a></p>
+      <h2>Let’s chat!</h2>
+      <a href="#"><img src="../assets/linkedin-logo.png" alt="linkedin-logo"></a>
+      <a href="#"><img src="../assets/twitter-logo.png" alt="twitter-logo"></a>
+      <a href="#"><img src="../assets/medium-logo.png" alt="medium-logo"></a>
     </section>
   </div>
 </template>
@@ -84,6 +94,41 @@ export default {
 </script>
 
 <style>
+div#social-media-mobile {
+  display: none;
+}
+div#social-media {
+  float: right;
+  margin-top: -18%;
+  margin-right: -14%;
+}
+div#social-media img {
+  width: 30px;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+#contact img {
+  width: 40px;
+  padding-right: 50px;
+}
+@media screen and (max-width: 400px) {
+  div#social-media {
+    display: none;
+  }
+  div#social-media-mobile {
+    display: block;
+  }
+  div#social-media-mobile img {
+    display: inline;
+    width: 30px;
+    padding: 30px 40px 30px 0px;
+  }
+  #contact img {
+    display: inline;
+    width: 30px;
+    padding-right: 40px;
+  }
+}
 /*grid*/
 .job-item {
   display: grid;
@@ -101,8 +146,9 @@ export default {
 .job-item .detail h3 {
   margin-bottom: 0px;
 }
-.job-item .detail .city {
+.job-item .detail p {
   margin-top: 0px;
+  margin-bottom: 15px;
 }
 /*grid*/
 @media screen and (max-width: 600px) {

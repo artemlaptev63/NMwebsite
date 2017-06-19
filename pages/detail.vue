@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section id="hero" class="section-bg-colored">
+    <section id="hero-detail" class="section-bg-colored">
         <h1>CTO / Co-Founder, Drinkeasy</h1>
         <p><em>NYC, Berlin</em></p>
         <p>A chatbot-fueled eCommerce platform for craft spirits. Techstars 2017</p>
@@ -35,7 +35,7 @@
 </script>
 
 <style>
-    #hero {
+    #hero-detail {
         padding-right: 30px;
     }
     .grid {

@@ -18,7 +18,10 @@ body {
 #contact {
     background-image: url("~assets/rectangle-3.png");
 }
-#hero, #technologies, #contact {
+#hero-detail {
+    background-image: url("~assets/rectangle-4.png");
+}
+#hero, #technologies, #contact, #hero-detail {
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -121,9 +124,6 @@ p {
     }
     #technologies h2:nth-of-type(1) {
       margin-top: 60px;
-    }
-    #contact p, a {
-      font-size: 18px;
     }
     body p,
     body ul {
