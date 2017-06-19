@@ -107,10 +107,6 @@ div#social-media img {
   padding-left: 20px;
   padding-right: 30px;
 }
-#contact img {
-  width: 40px;
-  padding-right: 50px;
-}
 @media screen and (max-width: 400px) {
   div#social-media {
     display: none;
@@ -122,11 +118,6 @@ div#social-media img {
     display: inline;
     width: 30px;
     padding: 30px 40px 30px 0px;
-  }
-  #contact img {
-    display: inline;
-    width: 30px;
-    padding-right: 40px;
   }
 }
 /*grid*/

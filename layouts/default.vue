@@ -94,6 +94,10 @@ p {
 #contact {
     padding-bottom: 5%;
 }
+#contact img {
+  width: 40px;
+  padding-right: 50px;
+}
 /*for mobile*/
 @media screen and (max-width: 500px) {
     h1, h2 {
@@ -129,6 +133,11 @@ p {
     body ul {
       font-size: 18px;
     }
+    #contact img {
+    display: inline;
+    width: 30px;
+    padding-right: 40px;
+  }
 }
   /*for mobile*/
 </style>

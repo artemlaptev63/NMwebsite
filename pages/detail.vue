@@ -3,7 +3,8 @@
     <section id="hero-detail" class="section-bg-colored">
         <h1>CTO / Co-Founder, Drinkeasy</h1>
         <p><em>NYC, Berlin</em></p>
-        <p>A chatbot-fueled eCommerce platform for craft spirits. Techstars 2017</p>
+        <p>A chatbot-fueled eCommerce<br/>
+           platform for craft spirits.<br/> Techstars 2017</p>
         <a href="drinkeasy.co">drinkeasy.co</a>
     </section>
     <section class="grid section-bg-plain">
@@ -17,16 +18,18 @@
             <h2>Subtitle Three</h2>
             <p>Wie oder wo genau die Mathematik entstand, kann man heute nicht mehr sagen. Fakt ist aber, dass man schon vor circa 5000 Jahren damit angefangen hat. Zuerst waren da die Babylonier. Sie waren die ersten Menschen, die eine Form der Mathematik benutzten, um ihre Anzahl an Vieh zu zählen. Ungefähr 2000 Jahre später entwickelten die Ägypter erste Formeln. Ähnlich wie bei den Babyloniern handelte es sich hier um die Berechnungen um Bauwerke zu errichten. Allerdings handelte es sich hier auch um Pyramiden. Auf Papyrusrollen lösten sie sogar schon richtige mathematische Aufgaben, die sie sich selbst stellten.
             </p>
+            <h2>Visit the site:</h2>
+            <a href="drinkeasy.com">drinkeasy.com</a>
         </div>
         <div class="logo">
             <img src="../assets/drink-easy-logo.png" alt="drink-easy">
         </div>
     </section>
     <section id="contact" class="section-bg-colored">
-      <h2>Get in Touch</h2>
-      <p>nicholas.manning at gmail dot com</p>
-      <p><a href="https://www.twitter.com/seenickcode" target="_blank">@seenickcode</a></p>
-      <p><a href="https://www.linkedin.com/in/nicholasmanning" target="_blank">LinkedIn Profile</a></p>
+        <h2>Let’s chat!</h2>
+        <a href="#"><img src="../assets/linkedin-logo.png" alt="linkedin-logo"></a>
+        <a href="#"><img src="../assets/twitter-logo.png" alt="twitter-logo"></a>
+        <a href="#"><img src="../assets/medium-logo.png" alt="medium-logo"></a>
     </section>
   </div>
 </template>
@@ -43,9 +46,12 @@
         grid-template-columns: 4fr 1fr;
     }
     img {
-        width: 200px;
-        margin-top: 0px;
+        width: 150px;
+        margin-top: 25px;
         margin-left: 10%;
+    }
+    #contact img {
+        margin-left: 0%;
     }
     .section-bg-colored {
         color: #ffffff;
