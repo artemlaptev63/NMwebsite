@@ -43,7 +43,7 @@ h1 {
     padding: 15% 10% 17% 20%;
 }
 .section-bg-plain {
-    padding: 10% 10% 10% 20%;
+    padding: 10% 10% 10% 30%;
 }
 ul {
     list-style: none;
