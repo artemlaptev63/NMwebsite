@@ -21,6 +21,13 @@ body {
 #hero-detail {
     background-image: url("~assets/rectangle-4.png");
 }
+#hero-detail-image {
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    top: -500px;
+    z-index: -1;
+}
 #hero, #technologies, #contact, #hero-detail {
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -36,7 +43,7 @@ h1 {
     padding: 15% 10% 17% 20%;
 }
 .section-bg-plain {
-    padding: 10% 10% 10% 30%;
+    padding: 10% 10% 10% 20%;
 }
 ul {
     list-style: none;

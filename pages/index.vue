@@ -2,10 +2,10 @@
   <div>
     <section id="hero" class="section-bg-colored">
       <div id="social-media">
-        <a href="#hero"><img src="../assets/linkedin-logo.png" alt="linkedin-logo"></a>
-        <a href="#hero"><img src="../assets/twitter-logo.png" alt="twitter-logo"></a>
-        <a href="#hero"><img src="../assets/medium-logo.png" alt="medium-logo"></a>
-      </div>  
+        <a href="https://www.linkedin.com/in/nicholasmanning" target="_blank"><img src="../assets/linkedin-logo.png" alt="linkedin-logo"></a>
+        <a href="https://twitter.com/seenickcode" target="_blank"><img src="../assets/twitter-logo.png" alt="twitter-logo"></a>
+        <a href="https://medium.com/@seenickcode" target="_blank"><img src="../assets/medium-logo.png" alt="medium-logo"></a>
+      </div>
       <h1>Nicholas Manning</h1>
       <ul>
         <li>CTO<li>
@@ -13,10 +13,10 @@
         <li>Berlin Based New Yorker</li>
       </ul>
       <div id="social-media-mobile">
-        <img src="../assets/linkedin-logo.png" alt="linkedin-logo">
-        <img src="../assets/twitter-logo.png" alt="twitter-logo">
-        <img src="../assets/medium-logo.png" alt="medium-logo">
-      </div> 
+        <a href="https://www.linkedin.com/in/nicholasmanning" target="_blank"><img src="../assets/linkedin-logo.png" alt="linkedin-logo"></a>
+        <a href="https://twitter.com/seenickcode" target="_blank"><img src="../assets/twitter-logo.png" alt="twitter-logo"></a>
+        <a href="https://medium.com/@seenickcode" target="_blank"><img src="../assets/medium-logo.png" alt="medium-logo"></a>
+      </div>
     </section>
     <section id="experience" class="section-bg-plain">
       <h2>In a Nutshell</h2>
@@ -58,7 +58,7 @@
           <router-link to="/detail">Learn more about Drinkeasy</router-link>
         </div>
         <div class="logo">
-          <router-link to="/detail"><img src="../assets/drink-easy-logo.png" alt="drink-easy"></router-link>
+          <router-link to="/detail" target="_blank"><img src="../assets/drinkeasy-logo.png" alt="drinkeasy"></router-link>
         </div>
       </div>
       <div class="job-item">
@@ -70,15 +70,14 @@
           <router-link to="/detail">Learn more about Swig</router-link>
         </div>
         <div class="logo">
-          <router-link to="/detail"><img src="../assets/swig-logo.png" alt="swig-logo"></router-link>
+          <router-link to="/detail" target="_blank"><img src="../assets/swig-logo.png" alt="swig-logo"></router-link>
         </div>
       </div>
     </section>
     <section id="contact" class="section-bg-colored">
-      <h2>Let’s chat!</h2>
-      <a href="#"><img src="../assets/linkedin-logo.png" alt="linkedin-logo"></a>
-      <a href="#"><img src="../assets/twitter-logo.png" alt="twitter-logo"></a>
-      <a href="#"><img src="../assets/medium-logo.png" alt="medium-logo"></a>
+      <a href="https://www.linkedin.com/in/nicholasmanning" target="_blank"><img src="../assets/linkedin-logo.png" alt="linkedin-logo"></a>
+      <a href="https://twitter.com/seenickcode" target="_blank"><img src="../assets/twitter-logo.png" alt="twitter-logo"></a>
+      <a href="https://medium.com/@seenickcode" target="_blank"><img src="../assets/medium-logo.png" alt="medium-logo"></a>
     </section>
   </div>
 </template>
